@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Henrique · Sobre mim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="" alt="Foto de Pedro Henrique" />
+      <div>
+        <h1></h1>
+        <p class="cargo"></p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sobre mim</h2>
+        <p>
+          Olá! Sou profissional da área de Analise em Desenvolvimento de Sistemas e 
+          atualmente cursando Engenharia de Sotware, com atuação em Suporte Técnico e 
+          Análise de Sistemas, focado em resolver problemas, otimizar processos e garantir a 
+          estabilidade dos sistemas utilizados pelas empresas.
+        </p>
+        <p class="destaque">
+          Tenho alguns conhecimentos em áreas correlativas.
+          <a href="https://linkedin.com/in/pedro-henrique-oliveira-141b2a268">Meu Linkedin</a>
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>O que estou aprendendo</h2>
+        <ul class="lista-skills"></ul>
+        <form class="form-skills">
+          <label for = "nova-skill">Adicionar Skill</label>
+          <input
+          id="nova-skill"
+          name="skill"
+          type="text"
+          placeholder="Adicione uma nova skill"
+          required
+          />
+          <button type="submit">Salvar skill</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Meus projetos</h2>
+        <div class="projetos">
+          <article>
+            <div class="projeto-imagem projeto-1"></div>
+            <h3>Barbearia</h3>
+            <p>Site de Barbearia simpels feito com HTML, CSS e JS</p>
+            <a href="https://github.com/HenriquePedrin/Barber-shop-page">Ver projeto</a>
+          </article>
+
+          <article>
+            <div class="projeto-imagem projeto-2"></div>
+            <h3>Code em Kotlin</h3>
+            <p>Aplicativo feito em Kotlin para sistema Android</p>
+            <a href="https://github.com/HenriquePedrin/Android">Ver projeto</a>
+          </article>
+
+          <article>
+            <div class="projeto-imagem projeto-3"></div>
+            <h3>Portifólio</h3>
+            <p>Portifólio feito em HTML, CSS</p>
+            <a href="https://github.com/HenriquePedrin/Home-page">Ver projeto</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Vamos conversar?</h2>
+        <p>Você pode me encontrar nos meus perfis ou enviar uma mensagem.</p>
+        <a href="https://github.com/henriquePedrin">Meu GitHub</a>
+          <button class="btn-mensagem">Enviar mensagem</button>
+      </section>
+
+      <!-- adição do formulário para a aula -->
+        <form class="formulario-contato escondido">
+          <label for="nome-usuario">Nome</label>
+          <input type="text" class="input-nome" id="nome-usuario" />
+
+          <label for="email-usuario">Email</label>
+          <input type="email" class="input-email" id="email-usuario"/>
+
+          <label for="msg-usuario">Mensagem</label>
+          <textarea class="input-mensagem" id="msg-usuario"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <p class="feedback" role="status"></p>
+        <!-- fim do form -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Feito com HTML e CSS em 2026.</p>
+    </footer>
+    <script src="./scripts/formulario.js"></script>
+    <script src="./scripts/skills.js"></script>
+    <script src="./scripts/github-api.js"></script>
+  </body>
+</html>
